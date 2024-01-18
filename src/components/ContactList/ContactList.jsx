@@ -11,10 +11,10 @@ export const ContactList = () => {
   return (
     <div className={css.container}>
       <ul className={css.contactList}>
-        {contacts.map(({ id, name, number }) => (
+        {contacts.map(({ id, name, phone }) => (
           <li key={id}>
-            <p >
-              {name} : {number}
+            <p className={css.text}>
+              {name} : {phone}
             </p>
             <button 
               type="button"
