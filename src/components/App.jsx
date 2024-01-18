@@ -22,7 +22,7 @@ export const App = () => {
 
   return (
     <>
-      <h1>Phonebook</h1>
+      <h1>☎ Phonebook</h1>
       <FormContact />
       <h2>Contacts list</h2>
       {isLoading && !error && <b>Request in progress...</b>}
@@ -30,7 +30,7 @@ export const App = () => {
       {contacts.length > 0 ? (
         <Filter />
       ) : (
-        <div>Your phonebook is empty. Add first contact!</div>
+        <h2>☹ Your phonebook is empty. Add first contact!</h2>
       )}
     </>
   );
